@@ -1,0 +1,207 @@
+
+
+/*-------------------------------------------------------------------------Commun a tous-------------------------------------------------------------------------------*/
+
+p{
+    line-height: 150%;
+    text-indent: 20px;
+}
+
+a {
+    text-decoration: none;    
+}
+
+@font-face {
+  font-family: 'Font';
+  src: url('fonts/Poppins-Regular.ttf');
+}
+
+/*--------------------------------------------------------------------------Body--------------------------------------------------------------------------------*/
+
+body{
+    margin: auto;
+    background-image: url(images/FOND.jpg);
+    background-attachment: fixed;
+    font-family: 'Font', sans-serif;
+}
+
+/*------------------------------------------------------------------------Header------------------------------------------------------------------------------*/
+
+header{
+    position: sticky;
+    top: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/*---------------------------------------------------------------------Navigation---------------------------------------------------------------------------*/
+
+#LogoPrincipal{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+nav{
+    background-color: black; 
+    display: flex;
+    height: 65px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+#menu{
+    display: flex;
+    flex-direction: row;
+}
+#menu>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+}
+
+#menu > div a {
+    color:white;
+}
+
+#menu > div a:hover {
+    color:#36B2E9;
+}
+
+.submenu{
+    background-color: black; 
+    position: absolute;
+    text-align: left;
+    top: 50px;
+    display: none;
+    padding: 20px;
+    z-index: 1;
+}
+
+.submenu > div{
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+
+.submenu > div:hover .puce{
+    visibility: visible;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#menu>div:hover>.submenu{
+    display: block;
+}
+
+.puce{
+    visibility: hidden;
+}
+
+.Logo{
+    width: 25px;
+    height: 25px;
+}
+
+/*----------------------------------------------------------------------------Articles---------------------------------------------------------------------------------*/
+
+article{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: justify;
+    margin: auto;
+    padding: 0% 5%;
+    background: radial-gradient(black 40%, transparent 80%);
+}
+
+article h2{
+    text-align: center;
+}
+
+article > div{
+    padding: 30px 0px;
+    justify-content: space-evenly;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+/*---------------------------------------------------------------------Article n°1---------------------------------------------------------------------------*/
+
+#article1 img{
+    border: solid white 2px;
+    width: 435px;
+    height: 250px;
+    margin-left: 20px;
+}
+
+/*---------------------------------------------------------------------Article n°2---------------------------------------------------------------------------*/
+
+#article2 img{
+    border: solid white 2px;
+    width: 615px;
+    height: 395px;
+}
+
+#article2 > div > div:first-child{
+    width: 45%;
+}
+
+
+#article2 > div > div:nth-child(2){
+    display: flex;
+    align-items: center;
+}
+
+/*---------------------------------------------------------------------Article n°3---------------------------------------------------------------------------*/
+
+#article3 img{
+    border: solid white 2px;
+    width: 615px;
+    height: 595px;
+}
+
+#article3>div>div:nth-child(2){
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#article3 p{
+    text-indent: 0px;
+}
+
+/*---------------------------------------------------------------------Lien vers le haut de la page---------------------------------------------------------------------------*/
+
+#LHDP{
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+}
+
+/*---------------------------------------------------------------------Footer---------------------------------------------------------------------------*/
+
+footer{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    text-align: justify;
+    margin: auto;
+    gap: 50px;
+}
+
+
+footer > a:visited{
+    color: white;
+}
+
+footer > a:hover{
+    color: #36B2E9
+}

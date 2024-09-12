@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact</title> 
+    <link rel="stylesheet" href="styletest.css" />
+</head>
+
+<body>
+    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+          de notre site web -->
+    <header>
+      <h1>Le numérique favorise-t-il le lien social ?</h1>
+      
+      <div class="burger">
+				<img src="style/burger.png" alt="Burger" width="50px">
+				<div id="menu-burger">
+          <div><a href="numérique_et_lien_social.html">Accueil</a></div>
+					<div><a href="PetL.html">Politique et Légal</a>
+            <div class="submenu-burger">
+              <div><span class="puce">➤</span><a href="PetL.html">Politique</a></div>
+              <div><span class="puce">➤</span><a href="PetL.html">Légal</a></div>
+            </div>
+          </div>
+					<div><a href="EetS.html">Economique et Social</a>
+            <div class="submenu-burger">
+              <div><span class="puce">➤</span><a href="EetS.html">Economique</a></div>
+              <div><span class="puce">➤</span><a href="EetS.html">Social</a></div>
+            </div>
+          </div>
+					<div><a href="TetE.html">Technologique et Ecologique</a>
+            <div class="submenu-burger">
+              <div><span class="puce">➤</span><a href="TetE.html">Technologique</a></div>
+              <div><span class="puce">➤</span><a href="TetE.html">Ecologique</a></div>
+            </div>
+          </div>
+					<div><a href="Formulaire.html">Contact</a></div>
+				 </div>
+			</div>
+
+      <nav>
+        <div class="menu">
+          <div><a href="numérique_et_lien_social.html">Accueil</a></div>
+          <div><a href="PetL.html">Politique et Légal</a>
+            <div class="submenu">
+              <div><span class="puce">➤</span><a href="PetL.html">Politique</a></div>
+              <div><span class="puce">➤</span><a href="PetL.html">Légal</a></div>
+            </div>
+          </div>
+          <div><a href="EetS.html">Economique et Social</a>
+            <div class="submenu">
+              <div><span class="puce">➤</span><a href="EetS.html">Economique</a></div>
+              <div><span class="puce">➤</span><a href="EetS.html">Social</a></div>
+            </div>
+          </div>
+          <div><a href="TetE.html">Technologique et Ecologique</a>
+            <div class="submenu">
+              <div><span class="puce">➤</span><a href="TetE.html">Technologique</a></div>
+              <div><span class="puce">➤</span><a href="TetE.html">Ecologique</a></div>
+            </div>
+          </div>
+          <div><a href="Formulaire.html">Contact</a></div>
+        </div>
+  
+      </nav>
+    </header>
+
+    <main>
+    <form action="/ma-page-de-traitement" method="post">…</form>
+  <fieldset>
+    <legend>Informations personnelles:</legend>
+    <p><label for="surname">* Nom:</label>
+      <input requiered="Obligatoire" id="surname" name="uname" type="text"> <br>
+    </p>
+    <p> <label for="firstname">Prénom:</label>
+      <input id="firstname" name="fname" type="text"><br>
+    </p>
+    
+    <p>Genre:
+      <input id="genre" name="genre" type="radio">
+      <label for="Femme">Femme</label>
+      <input id="genre" name="genre" type="radio">
+      <label for="Homme">Homme</label>
+      <input id="genre" name="genre" type="radio">
+      <label for="Autre">Autre</label>
+    </p>
+    <label for="birthday">Date de naissance:</label>
+    <input type="date" id="birthday" name="birthday">
+    <p> <label for="pays">Pays:</label>
+
+      <select name="pays" id="pays">
+        <option value="fr">France</option>
+        <option value="ch">Chine</option>
+        <option value="vn">Viêt Nam</option>
+        <option value="usa">Etats-unis</option>
+    </p></select>
+    <p><label for="email">* Email:</label>
+      <input requiered="Obligatoire" type="email" id="email" name="email" placeholder="yourmail@domain.com">
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Questions</legend>
+    <p><label for="question">Comment avez vous entendu parler de nous ?</label>
+      <select name="question" id="question" multiple>
+        <option value="RS">Réseaux sociaux</option>
+        <option value="Pub">Publicité</option>
+        <option value="web">Internet</option>
+
+      </select>
+      <p><label for="autre">Autre&nbsp;:</label>
+        <textarea id="autre" name="user_message"></textarea></p>
+    </p>
+  </fieldset>
+  <fieldset>
+    <legend>Message</legend>
+   
+    <p><label for="message">Message:</label><br>
+
+      <textarea id="message" name="message" rows="4" cols="50"
+        placeholder="Ce message sera transmis a notre équipe."></textarea>
+    </p>
+    </p>
+    <label for="recontact">Date à laquelle vous souhaitez être recontacté:</label>
+    <input type="date" id="recontact" name="recontact">
+    <p>
+  </fieldset>
+  <input type="submit" value="Envoyer">
+</form>
+  
+  </main>
+  <footer>
+    <figure>
+      <figcaption>Ecouter notre podcast !</figcaption>
+      <audio controls src="/Podcast/Polaris - THE REMEDY [Official Music Video].mp3">
+        <a href="/Podcast/Polaris - THE REMEDY [Official Music Video].mp3"> Download audio </a>
+      </audio>
+    </figure>
+    <a href="#">Mention Légales</a>
+    <a href="#">Un question ?</a>
+    <a href="#">Bibliographie</a>
+    <a href="#">Nous Contacter</a>
+  </footer>
+</body>
